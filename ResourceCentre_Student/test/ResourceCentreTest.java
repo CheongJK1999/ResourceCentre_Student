@@ -66,7 +66,7 @@ public class ResourceCentreTest {
 	}
 	
 	@Test
-	public void retrieveAllCamcorderTest() {
+	public void retrieveAllCamcorderTest() { // done by Keagan
 		// Test if Item list is not null but empty, so that can add a new item
 		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
 		
@@ -90,9 +90,15 @@ public class ResourceCentreTest {
 		
 	}
 	@Test
-	public void retrieveAllChromebookTest() {
+	public void retrieveAllChromebookTest() { // done by Keagan
 		//fail("Not yet implemented");
 		// write your code here
+		assertNotNull("Test if there is valid ChromebookTest arraylist to add to", chromebookList);
+		
+		
+				String allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
+				String testOutput = "";
+				assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
 	}
 
 	@Test
