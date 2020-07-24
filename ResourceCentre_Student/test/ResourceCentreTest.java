@@ -135,13 +135,24 @@ public class ResourceCentreTest {
 	public void doReturnCamcorderTest() {
 		// fail("Not yet implemented");
 		// write your code here
-
+		
+		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
+		
+		ResourceCentre.addCamcorder(camcorderList, cc1);
+		assertEquals("Test if the method successfully adds object to the list", ResourceCentre.doReturnCamcorder(camcorderList, "CC0011"), false);
+		
 	}
 
 	@Test
 	public void doReturnChromebookTest() {
 		// fail("Not yet implemented");
 		// write your code here
+		
+		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
+		
+		ResourceCentre.addChromebook(chromebookList, cb1);
+		assertEquals("Test if the method successfully adds object to the list", ResourceCentre.doReturnChromebook(chromebookList, "CB0011"), false);
+		
 	}
 
 	@After
